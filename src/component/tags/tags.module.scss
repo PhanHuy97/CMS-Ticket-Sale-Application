@@ -1,0 +1,46 @@
+.tag {
+    height: 56px;
+    width: 100%;
+    left: 20px;
+    top: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.icon {
+    height: 20.0239315032959px;
+    width: 18.0001277923584px;
+    left: 2.9998779296875px;
+    top: 1.97607421875px;
+    border-radius: 0px;
+    margin-left: 19px;
+    margin-bottom: 4px;
+    filter: invert(6%) sepia(9%) saturate(6447%) hue-rotate(347deg) brightness(100%) contrast(100%);
+}
+
+.title {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1E0D03;
+    padding-left: 15px;
+}
+
+.active {
+    background: #FFB800;
+    .icon {
+        filter: invert(98%) sepia(1%) saturate(2%) hue-rotate(323deg) brightness(118%) contrast(100%);
+    }
+    .title {
+        color: #fff;
+        font-weight: 700;
+    }
+}

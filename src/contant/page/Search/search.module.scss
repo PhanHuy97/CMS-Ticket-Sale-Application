@@ -1,0 +1,43 @@
+.waper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 437px;
+    left: 321px;
+    top: 17px;
+    border-radius: 12px;
+    padding: 10px 16px;
+    background-color: #EDE6E6;
+}
+
+.input {
+    height: 28px;
+    width: 361px;
+    left: 16px;
+    top: 10px;
+    border: none;
+    background-color:transparent;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.group {
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
+
+.icon {
+    height: 23.99974250793457px;
+    width: 24px;
+    cursor: pointer;
+}

@@ -1,0 +1,61 @@
+.waper {
+    margin-top: 16px;
+}
+
+.moneyList {
+    display: flex;
+    flex-direction: column;
+}
+
+.money {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #888;
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+.line {
+    border-top: 1px solid #ece9f1;
+    width: 100%;
+    margin-right: 39px;
+    &:not(:last-child) {
+        margin-bottom: 70px;
+    }
+    &:first-child {
+        margin-top: 12px;
+    }
+    &:last-child {
+        margin-bottom: 21px;
+    }
+}
+
+.graph {
+    position:absolute;
+    width: calc(100% - 39px);
+    bottom: 22px;
+}
+
+.lineGraph {
+    position:absolute;
+    width: calc(100% - 39px);
+    bottom: 35px;
+}
+
+.date {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #888;
+}
+
