@@ -4,8 +4,8 @@ import Menu from './contant/page/Menu';
 import { Col, Row } from 'antd';
 import Search from './contant/page/Search';
 import InformationUser from './contant/page/InformationUser';
-import graph from './assets/svg/img/graph.svg'
 import Home from './contant/Home';
+import TicketControl from './contant/TicketControl';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
             <InformationUser/>
           </Row>
           <Row className="page-wapper">
+            {/* <TicketControl/> */}
             <Home/>
           </Row>
         </Col>

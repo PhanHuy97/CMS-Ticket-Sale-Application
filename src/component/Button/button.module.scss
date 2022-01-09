@@ -1,0 +1,60 @@
+.waper {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: block;
+    width: fit-content;
+}
+
+.sizem {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 6px;
+}
+
+.sizexl {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 8px;
+
+}
+
+.outline {
+    background-color: transparent;
+    border: 1px solid #ff993c;
+}
+
+.fill {
+    background-color: #ff993c;
+}
+
+.icon {
+    margin-right: 12px;
+    transform: translateY(-3px);
+}
+
+.label {
+    //styleName: 18 bold;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.outlineLabel {
+    color: #ff993c;
+}
+
+.fillLabel {
+    color: #fff;
+}
+
+.sizemLabel {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.sizexlLabel {
+    font-size: 18px;
+    line-height: 26px;
+}

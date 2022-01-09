@@ -1,0 +1,66 @@
+.waper {
+    padding: 8px 12px;
+    width: fit-content;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.open {
+    background-color: #DEF7E0;
+    border: 1px solid #03AC00;
+}
+
+.end {
+    background: #F8EBE8;
+    border: 1px solid #FD5959
+}
+
+.coming {
+    background: #EAF1F8;
+    border: 1px solid #919DBA
+}
+
+.ellip {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.openEllip {
+    background: #03AC00;
+}
+
+.endEllip {
+    background: #FD5959;
+}
+
+.comingEllip {
+    background: #919DBA;
+}
+
+.title {
+    //styleName: 12 medium;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.openTitle {
+    color: #03AC00;
+
+}
+
+.endTitle {
+    color: #FD5959;
+}
+
+.comingTitle {
+    color: #919DBA;
+}
+
