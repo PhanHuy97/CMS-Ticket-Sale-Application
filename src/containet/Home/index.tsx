@@ -15,7 +15,7 @@ function Home() {
                 <span className={style.title}>Doanh thu</span>
                 <div className={style.waper}>
                     <span className={style.lable}>Tháng 4,2021</span>
-                    <img src={date} alt="" className={style.icon}/>
+                    <img src={date} alt="" className={style.icon} style={{ cursor: "pointer" }}/>
                 </div>
             </Row>
 

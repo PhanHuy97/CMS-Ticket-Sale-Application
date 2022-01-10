@@ -4,6 +4,7 @@ import Button from '../../component/Button';
 import glass from '../../assets/svg/icon/glass.svg';
 import style from './ticketControl.module.scss';
 import Search from '../page/Search';
+import CalendarCustom from '../../component/calendar';
 
 function TicketControl() {
     return (
@@ -16,7 +17,7 @@ function TicketControl() {
                     <Button type='outline' size='xl'>Xuất file (.csv)</Button>
                 </div> 
             </div>
-            
+            <CalendarCustom/>
         </div>
     );
 }

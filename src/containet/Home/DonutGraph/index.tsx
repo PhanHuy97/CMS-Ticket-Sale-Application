@@ -1,9 +1,28 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { loadData } from '../../../redux/action-creator';
+import { ReducerState } from '../../../redux/reducers';
 import DonutChart from "react-donut-chart";
 import "./donut.scss"
 
 
 
 function DonutGraph() {
+
+    const data = useSelector((state:ReducerState)=>state.api.data)
+    
+    const dispatch = useDispatch()
+
+    useEffect(()=>{
+        dispatch(loadData('quantily'))
+    },[dispatch])
+
+    let family = { used: 1 ,unused: 0 }
+    let event = { used: 1 ,unused: 0 }
+    if (data.quantily) {
+        family= data.quantily.family
+        event= data.quantily.even
+    }
 
     // funtion handel position for value in donut chart
     const positionNumber = ( num1: number, num2: number, type: 'left'|'right' ) =>{
@@ -28,10 +47,10 @@ function DonutGraph() {
                 <DonutChart data={[ 
                     {
                         label:'vé chưa sử dụng',
-                        value: 13568
+                        value: family.unused
                     },{
                         label:'vé đã sử dụng' ,
-                        value: 56024
+                        value: family.used
                     } ]} 
                     height={240}
                     width={240} 
@@ -43,8 +62,8 @@ function DonutGraph() {
                     clickToggle={false}
                     strokeColor="transparent"
                     className="donut-graph" />
-                <span className="number" style={positionNumber(56024,13568,"left")}>56024</span>
-                <span className="number" style={positionNumber(13568,56024,'right')}>13568</span>
+                <span className="number" style={positionNumber(family.used,family.unused,"left")}>{family.used.toString()}</span>
+                <span className="number" style={positionNumber(family.unused,family.used,'right')}>{family.unused.toString()}</span>
                 
             </div>
             <div className="even-wapper">
@@ -52,10 +71,10 @@ function DonutGraph() {
                 <DonutChart data={[ 
                     {
                         label:'vé chưa sử dụng',
-                        value: 28302
+                        value: event.unused
                     },{
                         label:'vé đã sử dụng' ,
-                        value: 30256
+                        value: event.used
                     } ]} 
                     height={240}
                     width={240} 
@@ -67,8 +86,8 @@ function DonutGraph() {
                     clickToggle={false}
                     strokeColor="transparent"
                     className="donut-graph" />
-                <span className="number" style={positionNumber(30256,28302,"left")}>30256</span>
-                <span className="number" style={positionNumber(28302,30256,"right")}>28302</span>
+                <span className="number" style={positionNumber(event.used,event.unused,"left")}>{event.used.toString()}</span>
+                <span className="number" style={positionNumber(event.unused,event.used,"right")}>{event.unused.toString()}</span>
             </div>
             <div style={{ marginTop:'54px', marginLeft: '170px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '18px'}}>

@@ -6,31 +6,40 @@ interface State {
     request: boolean;
     success: boolean;
     message?: string;
-    data?: string[];
+    data?: any;
 }
 
 const initState: State = {
     request: false,
     success: false,
     message: "",
-    data:[]
+    data:{}
 }
 
 
-export const jobsReducer= (state: State = initState,action: Action) => {
+export const apiReducer= (state: State = initState,action: Action) => {
     switch (action.type) {
         case ActionType.API_REQUEST :
             return { 
                 ...state,
                 request:true,
             }
-        case ActionType.API_SUCCESS : 
+        case ActionType.API_SUCCESS : {
+                let newData = {...state.data}
+                const key = action.payload.key
+
+                if (newData[key]) {
+                    newData[key] = action.payload.data
+                } else {
+                    newData = {...newData,[key]:action.payload.data}
+                }
             return {
                 ...state,
                 request:false,
                 success:true,
-                data:action.payload
+                data: newData
             }     
+        }
         case ActionType.API_ERROR : 
             return {
                 ...state,

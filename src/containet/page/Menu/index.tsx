@@ -21,10 +21,10 @@ function Menu(): JSX.Element{
         <div className={style.menu}>
             <img src={logo} alt="" />
             <div className={style.pb59}></div>
-            <Tag selected={selected==='Trang chủ'} icon={home} >Trang chủ</Tag>
-            <Tag selected={selected==='Quản lí vé'} icon={ticket} >Quản lí vé</Tag>
-            <Tag selected={selected==='Đối soát vé'} icon={list} >Đối soát vé</Tag>
-            <Tag selected={selected==='Cài đặt'} icon={setting} >Cài đặt</Tag>
+            <Tag selected={selected==='Trang chủ'} icon={home} link='/' handleClick={handleClick}>Trang chủ</Tag>
+            <Tag selected={selected==='Quản lí vé'} icon={ticket} link='/TicketControl' handleClick={handleClick}>Quản lí vé</Tag>
+            <Tag selected={selected==='Đối soát vé'} icon={list} link='/TicketManager' handleClick={handleClick}>Đối soát vé</Tag>
+            <Tag selected={selected==='Cài đặt'} icon={setting} link='/Setting' handleClick={handleClick}>Cài đặt</Tag>
         </div>
     );
 }

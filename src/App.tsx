@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import Menu from './contant/page/Menu';
+import { Route, Routes } from 'react-router-dom';
 import { Col, Row } from 'antd';
-import Search from './contant/page/Search';
-import InformationUser from './contant/page/InformationUser';
-import Home from './contant/Home';
-import TicketControl from './contant/TicketControl';
+import Menu from './containet/page/Menu';
+import Search from './containet/page/Search';
+import InformationUser from './containet/page/InformationUser';
+import Home from './containet/Home';
+import TicketControl from './containet/TicketControl';
+import TicketManager from './containet/ticketManage';
+import Setting from './containet/setting';
 
 function App() {
   return (
@@ -20,8 +23,12 @@ function App() {
             <InformationUser/>
           </Row>
           <Row className="page-wapper">
-            {/* <TicketControl/> */}
-            <Home/>
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/TicketControl" element={<TicketControl/>}/>
+              <Route path="/TicketManager" element={<TicketManager/>}/>
+              <Route path="/Setting" element={<Setting/>}/>
+            </Routes>                                  
           </Row>
         </Col>
       </Row>

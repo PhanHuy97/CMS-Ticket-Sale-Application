@@ -16,7 +16,7 @@ export const loadData = (api:string) => async (dispatch: Dispatch) => {
         if (dataSnapShot.exists()){
             dispatch({
                 type: ActionType.API_SUCCESS,
-                payload: dataSnapShot.data()
+                payload: { key: api, data: dataSnapShot.data() }
             })
         }
     } catch (error) {
