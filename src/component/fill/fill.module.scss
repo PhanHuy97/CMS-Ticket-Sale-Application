@@ -1,43 +1,48 @@
 .waper {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    border-radius:8px;
-    padding: 8px 12px;
-    width: 234px;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 234px;
+  justify-content: flex-start;
 }
 
 .hasicon {
-    justify-content: space-between;
-    width: 142px;
+  justify-content: space-between;
+  width: fit-content;
 }
 
 .normal {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .fill {
-    background-color: transparent;
-    border: 1px solid #a5a8b1;
+  background-color: transparent;
+  border: 1px solid #a5a8b1;
 }
 
 .disabled {
-    background-color: #e0e0e0;
-    opacity: 0.8;
+  background-color: #e0e0e0;
+  opacity: 0.8;
 }
 
 .lable {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .icon {
-    height: 22px;
-    width: 20px;
+  height: 22px;
+  width: 20px;
+  transform: translateY(-2px);
+  margin-left: 12px;
+}
 
+.border {
+  border: 1px solid #1e0d03;
 }

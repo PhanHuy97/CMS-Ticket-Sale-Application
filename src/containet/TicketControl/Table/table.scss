@@ -1,0 +1,51 @@
+.control-table {
+  margin-top: 32px;
+
+  & .ant-table-thead > tr > th {
+    padding: 11px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    background-color: #f1f4f8;
+    border: none;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.control-row-light {
+  background-color: #ffffff;
+  & > td {
+    padding: 8px !important;
+    //styleName: 14 medium;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.control-row-dark {
+  background-color: #f1f4f8;
+  & > td {
+    padding: 8px !important;
+    //styleName: 14 medium;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.control-pagination {
+  margin-top: 50px !important;
+}

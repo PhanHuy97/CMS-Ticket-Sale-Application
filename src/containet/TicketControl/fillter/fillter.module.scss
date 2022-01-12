@@ -1,0 +1,81 @@
+.modal {
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.waper {
+  margin: auto;
+  height: 454px;
+  width: 634px;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 24px 32px;
+}
+.title {
+  //styleName: 24 bold;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 26px;
+}
+.label {
+  //styleName: 16 semibold;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 6px;
+  display: block;
+}
+.status {
+  //styleName: 16 semibold;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 7px;
+}
+.radioGroup {
+  display: flex;
+  justify-content: space-between;
+}
+.radio {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.checkbox {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  flex: 0.333333333;
+}
+.button {
+  padding: 11px 64px;
+}
