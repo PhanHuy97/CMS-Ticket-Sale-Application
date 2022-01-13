@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadData } from "../../redux/action-creator";
 import { ReducerState } from "../../redux/reducers";
 import Status from "../../component/status";
+import { Row } from "antd";
 
 function TicketControl() {
   const [fillterButton, setFillterButton] = useState(false);
@@ -91,28 +92,34 @@ function TicketControl() {
   ];
 
   return (
-    <div className={style.waper}>
-      <span className={style.header}>Danh sách vé</span>
-      <div className={style.search}>
-        <Search placeholder="Tìm bằng số vé" background="#F7F7F8" width={446} />
-        <div className={style.buttonWaper}>
-          <Button
-            icon={glass}
-            type="outline"
-            size="xl"
-            marginRight={10}
-            onClick={handleClickFillter}
-          >
-            Lọc vé
-          </Button>
-          <Button type="outline" size="xl">
-            Xuất file (.csv)
-          </Button>
+    <Row className={style.pageWapper}>
+      <div className={style.waper}>
+        <span className={style.header}>Danh sách vé</span>
+        <div className={style.search}>
+          <Search
+            placeholder="Tìm bằng số vé"
+            background="#F7F7F8"
+            width={446}
+          />
+          <div className={style.buttonWaper}>
+            <Button
+              icon={glass}
+              type="outline"
+              size="xl"
+              marginRight={10}
+              onClick={handleClickFillter}
+            >
+              Lọc vé
+            </Button>
+            <Button type="outline" size="xl">
+              Xuất file (.csv)
+            </Button>
+          </div>
         </div>
+        <TableCustom data={tableData} columns={columns} request={request} />
+        {fillterButton && <Fillter exists={handleClickFillter} />}
       </div>
-      <TableCustom data={tableData} columns={columns} request={request} />
-      {fillterButton && <Fillter exists={handleClickFillter} />}
-    </div>
+    </Row>
   );
 }
 

@@ -7,7 +7,7 @@ import Total from "./Total";
 
 function Home() {
   return (
-    <div>
+    <Row className={style.pageWapper}>
       <Row>
         <span className={style.header}>Thống kê</span>
       </Row>
@@ -40,7 +40,7 @@ function Home() {
           <DonutGraph />
         </div>
       </div>
-    </div>
+    </Row>
   );
 }
 

@@ -1,0 +1,44 @@
+.wapper {
+  padding: 24px;
+}
+.title {
+  //styleName: 24 bold;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 32px;
+  display: block;
+}
+.label {
+  //styleName: 16 semibold;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.radio {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.fill {
+  width: 192px;
+}
+.fillOn {
+  width: 192px;
+  background-color: #f7f8fb;
+}
+.button {
+  padding: 11px 64px;
+}

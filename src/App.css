@@ -1,20 +1,7 @@
-
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
 .container {
-    padding: 17px 32px 32px 33px;
-    background-color: #E5E5E5;
-    height: 100vh;
-
-    
-}
-
-.page-wapper {
-    margin-top: 20px;
-    background-color: #fff;
-    border-radius: 24px;
-    flex: 1;
-    display: block;
-    width: 100%;
-    padding: 24px;
+  padding: 17px 32px 32px 33px;
+  background-color: #e5e5e5;
+  height: 100vh;
 }

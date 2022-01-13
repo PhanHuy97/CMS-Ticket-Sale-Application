@@ -7,12 +7,13 @@ interface FillType {
   icon?: string;
   type: "disable" | "fill" | "normal";
   border?: boolean;
+  className?: string;
 }
 
-function Fill({ children, icon, type, border }: FillType) {
+function Fill({ children, icon, type, border, className }: FillType) {
   return (
     <div
-      className={clsx(style.waper, {
+      className={clsx(style.waper, className, {
         [style.hasicon]: Boolean(icon),
         [style.normal]: type === "normal",
         [style.fill]: type === "fill",

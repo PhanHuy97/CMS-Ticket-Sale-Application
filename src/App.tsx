@@ -22,14 +22,12 @@ function App() {
             <Search />
             <InformationUser />
           </Row>
-          <Row className="page-wapper">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/TicketControl" element={<TicketControl />} />
-              <Route path="/TicketManager" element={<TicketManager />} />
-              <Route path="/Setting" element={<Setting />} />
-            </Routes>
-          </Row>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/TicketControl" element={<TicketControl />} />
+            <Route path="/TicketManager" element={<TicketManager />} />
+            <Route path="/Setting" element={<Setting />} />
+          </Routes>
         </Col>
       </Row>
     </div>

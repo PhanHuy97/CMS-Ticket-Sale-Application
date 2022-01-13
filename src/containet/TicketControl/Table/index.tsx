@@ -10,7 +10,7 @@ interface TableType {
 
 function TableCustom({ columns, data, request }: TableType) {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <Table
         columns={columns}
         dataSource={data}
