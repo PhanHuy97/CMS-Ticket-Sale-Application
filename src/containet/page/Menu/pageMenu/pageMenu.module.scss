@@ -1,0 +1,29 @@
+.settingPlus {
+  display: flex;
+  padding-left: 80px;
+  padding-right: 67px;
+  //styleName: 18 medium;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.015em;
+  text-align: left;
+  color: #1e0d03;
+}
+.settingPlusActive {
+  display: flex;
+  padding-left: 80px;
+  padding-right: 67px;
+  padding-top: 8px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #1e0d03;
+}

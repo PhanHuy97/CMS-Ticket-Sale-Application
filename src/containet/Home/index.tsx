@@ -1,5 +1,6 @@
 import { Row } from "antd";
 import date from "../../assets/svg/icon/date.svg";
+import CalendarCustom from "../../component/calendar";
 import DonutGraph from "./DonutGraph";
 import Graph from "./Graph";
 import style from "./home.module.scss";
@@ -40,6 +41,7 @@ function Home() {
           <DonutGraph />
         </div>
       </div>
+      <CalendarCustom />
     </Row>
   );
 }

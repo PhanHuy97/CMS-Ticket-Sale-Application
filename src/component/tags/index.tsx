@@ -4,7 +4,7 @@ import style from "./tags.module.scss";
 
 interface TagType {
   selected: boolean;
-  children: string;
+  children: string | Element;
   icon: string;
   link: string;
 }

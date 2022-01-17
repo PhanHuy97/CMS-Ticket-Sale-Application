@@ -3,6 +3,8 @@ import home from "../../../../assets/svg/icon/home.svg";
 import list from "../../../../assets/svg/icon/list.svg";
 import setting from "../../../../assets/svg/icon/setting.svg";
 import ticket from "../../../../assets/svg/icon/ticket.svg";
+import style from "./pageMenu.module.scss";
+import { Link } from "react-router-dom";
 
 function SettingMenu() {
   return (
@@ -19,6 +21,9 @@ function SettingMenu() {
       <Tag selected={true} icon={setting} link="/Setting">
         Cài đặt
       </Tag>
+      <Link to="/Setting" className={style.settingPlusActive}>
+        Gói dịch vụ
+      </Link>
     </>
   );
 }
