@@ -5,6 +5,7 @@ import style from "./fillter.module.scss";
 import date from "../../../assets/svg/icon/date.svg";
 import { Radio } from "antd";
 import Button from "../../../component/Button";
+import CalendarCustom from "../../../component/calendar";
 
 interface FillterType {
   exists: () => void;
@@ -21,6 +22,18 @@ function Fillter({ exists }: FillterType) {
     exists();
   };
 
+  const [toDate, setToDate] = useState(false);
+
+  const [fromDate, setFromDate] = useState(false);
+
+  const handleClickToDate = () => {
+    setToDate(!toDate);
+  };
+
+  const handleClickFromDate = () => {
+    setFromDate(!fromDate);
+  };
+
   return (
     <div className={style.modal} onClick={exists}>
       <div
@@ -33,14 +46,31 @@ function Fillter({ exists }: FillterType) {
         <div style={{ display: "flex" }}>
           <div style={{ marginRight: "122px" }}>
             <span className={style.label}>Từ ngày</span>
-            <Fill type="normal" icon={date} border>
+            <Fill type="normal" icon={date} border onClick={handleClickToDate}>
               01/04/2021
+              {toDate && (
+                <CalendarCustom
+                  className={style.calendar}
+                  handleOnSelect={handleClickToDate}
+                />
+              )}
             </Fill>
           </div>
           <div>
             <span className={style.label}>Đến ngày</span>
-            <Fill type="normal" icon={date} border>
+            <Fill
+              type="normal"
+              icon={date}
+              border
+              onClick={handleClickFromDate}
+            >
               01/04/2021
+              {fromDate && (
+                <CalendarCustom
+                  className={style.calendar}
+                  handleOnSelect={handleClickFromDate}
+                />
+              )}
             </Fill>
           </div>
         </div>

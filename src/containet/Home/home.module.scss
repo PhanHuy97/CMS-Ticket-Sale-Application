@@ -9,6 +9,7 @@
   background-color: transparent;
   border: 1px solid #a5a8b1;
   margin-right: 39px;
+  position: relative;
 }
 .lable {
   font-family: Montserrat;
@@ -46,4 +47,10 @@
   display: block;
   width: 100%;
   padding: 24px;
+}
+.calendar {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
 }

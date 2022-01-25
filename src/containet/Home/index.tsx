@@ -1,4 +1,5 @@
 import { Row } from "antd";
+import { useState } from "react";
 import date from "../../assets/svg/icon/date.svg";
 import CalendarCustom from "../../component/calendar";
 import DonutGraph from "./DonutGraph";
@@ -7,6 +8,12 @@ import style from "./home.module.scss";
 import Total from "./Total";
 
 function Home() {
+  const [openCalendar, setOpenCalendar] = useState(false);
+
+  const handleClickCalendar = () => {
+    setOpenCalendar(!openCalendar);
+  };
+
   return (
     <Row className={style.pageWapper}>
       <Row>
@@ -24,7 +31,14 @@ function Home() {
             alt=""
             className={style.icon}
             style={{ cursor: "pointer" }}
+            onClick={handleClickCalendar}
           />
+          {openCalendar && (
+            <CalendarCustom
+              className={style.calendar}
+              handleOnSelect={handleClickCalendar}
+            />
+          )}
         </div>
       </Row>
 
@@ -41,7 +55,6 @@ function Home() {
           <DonutGraph />
         </div>
       </div>
-      <CalendarCustom />
     </Row>
   );
 }

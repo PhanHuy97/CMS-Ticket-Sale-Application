@@ -5,8 +5,21 @@ import date from "../../../assets/svg/icon/date.svg";
 import Fill from "../../../component/fill";
 import style from "./fillterManage.module.scss";
 import Button from "../../../component/Button";
+import { useState } from "react";
+import CalendarCustom from "../../../component/calendar";
 
 function FillterManage() {
+  const [todate, setTodate] = useState(false);
+  const [fromdate, setFromdate] = useState(false);
+
+  const handleClickToDate = () => {
+    setTodate(!todate);
+  };
+
+  const handleClickFromDate = () => {
+    setFromdate(!fromdate);
+  };
+
   return (
     <div className={style.wapper}>
       <span className={style.title}>Lọc vé</span>
@@ -15,7 +28,7 @@ function FillterManage() {
           <span className={style.label}>Tình trạng đối soát</span>
         </Col>
         <Col flex="1">
-          <Radio.Group size="large">
+          <Radio.Group size="large" defaultValue={1}>
             <Space direction="vertical">
               <Radio value={1} className={style.radio}>
                 Tất cả
@@ -51,8 +64,19 @@ function FillterManage() {
           <span className={style.label}>Từ ngày</span>
         </Col>
         <Col flex="1">
-          <Fill type="disable" icon={dateGrey} className={style.fill}>
+          <Fill
+            type="disable"
+            icon={dateGrey}
+            className={style.fill}
+            onClick={handleClickToDate}
+          >
             01/05/2021
+            {todate && (
+              <CalendarCustom
+                className={style.calendar}
+                handleOnSelect={handleClickToDate}
+              />
+            )}
           </Fill>
         </Col>
       </Row>
@@ -61,8 +85,19 @@ function FillterManage() {
           <span className={style.label}>Đến ngày</span>
         </Col>
         <Col flex="1">
-          <Fill type="disable" icon={date} className={style.fillOn}>
+          <Fill
+            type="disable"
+            icon={date}
+            className={style.fillOn}
+            onClick={handleClickFromDate}
+          >
             dd/mm/yy
+            {fromdate && (
+              <CalendarCustom
+                className={style.calendar}
+                handleOnSelect={handleClickFromDate}
+              />
+            )}
           </Fill>
         </Col>
       </Row>

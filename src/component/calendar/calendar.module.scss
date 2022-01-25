@@ -4,6 +4,7 @@
   border-radius: 20px;
   padding: 16px 11px;
   box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35);
+  background-color: #fff;
   & div {
     border: none !important;
   }
@@ -17,15 +18,74 @@
     line-height: 28px;
     letter-spacing: 0px;
     text-align: center;
+    padding: 5px 0 !important;
+  }
+  & table tbody tr td {
+    padding: 4px 0 !important;
   }
 }
+.label {
+  //styleName: 18 bold;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.icon {
+  cursor: pointer;
+  &:hover {
+    filter: invert(69%) sepia(52%) saturate(406%) hue-rotate(338deg)
+      brightness(103%) contrast(101%);
+  }
+}
+.radioGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.radio {
+  //styleName: Menu Medium 14;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+
 .date {
   //styleName: 16 medium;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 32px;
   letter-spacing: 0em;
   text-align: center;
+}
+
+.selectedDate {
+  background-color: #ffba7b;
+  width: 32px;
+  margin: auto;
+  border-radius: 50%;
+}
+.dateSelect {
+  color: #fff;
+}
+.selectedWeek {
+  background-color: #ffba7b;
+  margin: auto;
+}
+.weekFirst {
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+.weekLast {
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
 }
