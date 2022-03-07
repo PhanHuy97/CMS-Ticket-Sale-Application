@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/CMS-Ticket-Sale-Application/static/css/main.8e748133.css",
+    "main.js": "/CMS-Ticket-Sale-Application/static/js/main.82d17e4f.js",
+    "static/js/787.bedb95a2.chunk.js": "/CMS-Ticket-Sale-Application/static/js/787.bedb95a2.chunk.js",
+    "static/media/avatar.svg": "/CMS-Ticket-Sale-Application/static/media/avatar.8874f1c844f5e16b853b412234fd2cd2.svg",
+    "static/media/logo.svg": "/CMS-Ticket-Sale-Application/static/media/logo.7a1149a6585e9bf150e01e351610c31c.svg",
+    "static/media/dateGrey.svg": "/CMS-Ticket-Sale-Application/static/media/dateGrey.2cf7bc63fd895809574c1813f286ba6d.svg",
+    "static/media/setting.svg": "/CMS-Ticket-Sale-Application/static/media/setting.108dbf259d6b04555884ab6e01295cd7.svg",
+    "static/media/list.svg": "/CMS-Ticket-Sale-Application/static/media/list.d7dfc1b1b4915ab3a29d650043411426.svg",
+    "static/media/ticket.svg": "/CMS-Ticket-Sale-Application/static/media/ticket.0c3e1704bf81135bba21a0a9305460db.svg",
+    "static/media/hous.svg": "/CMS-Ticket-Sale-Application/static/media/hous.fea3dd3a8a5662ef77e5e1585628cd7e.svg",
+    "static/media/home.svg": "/CMS-Ticket-Sale-Application/static/media/home.64340f1d829660b95834aab762b94d7d.svg",
+    "static/media/date.svg": "/CMS-Ticket-Sale-Application/static/media/date.3de1c4336505a9f3f1d44e1f0ddbbe98.svg",
+    "index.html": "/CMS-Ticket-Sale-Application/index.html",
+    "static/media/down.svg": "/CMS-Ticket-Sale-Application/static/media/down.8c69ad3981d4d7b2c29d18aaeede0681.svg",
+    "static/media/graph.svg": "/CMS-Ticket-Sale-Application/static/media/graph.4cccb9a802fbae1d12a6148ab6e79142.svg",
+    "static/media/search.svg": "/CMS-Ticket-Sale-Application/static/media/search.732877ce5962f62ac8855320e7cf5596.svg",
+    "static/media/lineGraph.svg": "/CMS-Ticket-Sale-Application/static/media/lineGraph.f94206a5cc22e2b104984353c7be6fc8.svg",
+    "static/media/update1.svg": "/CMS-Ticket-Sale-Application/static/media/update1.cadc99aff773c2bc4f5d43effed45989.svg",
+    "static/media/update2.svg": "/CMS-Ticket-Sale-Application/static/media/update2.96c5159f70ee5be93f14a3af8f505a40.svg",
+    "static/media/vectorBell2.svg": "/CMS-Ticket-Sale-Application/static/media/vectorBell2.cb902bd9ebca69d93edf6a7bb0157257.svg",
+    "static/media/vectorBell.svg": "/CMS-Ticket-Sale-Application/static/media/vectorBell.618c718258e52b5cdccf17d021f01d6c.svg",
+    "static/media/vectorSquare.svg": "/CMS-Ticket-Sale-Application/static/media/vectorSquare.a769e526434bd68cbd797f8f1233f9d7.svg",
+    "static/media/next.svg": "/CMS-Ticket-Sale-Application/static/media/next.2862dfc9b2705953e471647100c2ea3a.svg",
+    "static/media/glass.svg": "/CMS-Ticket-Sale-Application/static/media/glass.b3ec725951dcee7f82c281d0a78cf57c.svg",
+    "static/media/frev.svg": "/CMS-Ticket-Sale-Application/static/media/frev.8b64920a423ffb470f7955b4031d4107.svg",
+    "static/media/vectorV.svg": "/CMS-Ticket-Sale-Application/static/media/vectorV.eb1213cf0d221e59529fa458ec2456a9.svg",
+    "main.8e748133.css.map": "/CMS-Ticket-Sale-Application/static/css/main.8e748133.css.map",
+    "main.82d17e4f.js.map": "/CMS-Ticket-Sale-Application/static/js/main.82d17e4f.js.map",
+    "787.bedb95a2.chunk.js.map": "/CMS-Ticket-Sale-Application/static/js/787.bedb95a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e748133.css",
+    "static/js/main.82d17e4f.js"
+  ]
+}
