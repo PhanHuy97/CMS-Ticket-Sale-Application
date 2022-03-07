@@ -2,6 +2,7 @@
   "name": "cms-tiket-sale-application",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://phanhuy97.github.io/CMS-Ticket-Sale-Application/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -16,6 +17,7 @@
     "antd": "^4.18.2",
     "clsx": "^1.1.1",
     "firebase": "^9.6.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-donut-chart": "^1.2.1",
