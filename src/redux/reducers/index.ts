@@ -1,11 +1,10 @@
 import { combineReducers } from "redux";
 import { apiReducer } from "./apiReducer";
-import { homeReducer } from "./homeReducer";
 
 const reducer = combineReducers({
-  api: apiReducer,
-  home: homeReducer,
-});
+    api: apiReducer
+})
 
-export default reducer;
-export type ReducerState = ReturnType<typeof reducer>;
+export default reducer
+export type ReducerState = ReturnType<typeof reducer>
+

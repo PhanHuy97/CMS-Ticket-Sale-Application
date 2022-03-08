@@ -34,19 +34,11 @@
 }
 .fill {
   width: 192px;
-  z-index: 1;
 }
 .fillOn {
   width: 192px;
   background-color: #f7f8fb;
-  z-index: 1;
 }
 .button {
   padding: 11px 64px;
-}
-.calendar {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  z-index: 100;
 }

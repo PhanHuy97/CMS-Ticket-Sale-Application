@@ -3,15 +3,14 @@ import React from "react";
 import style from "./fill.module.scss";
 
 interface FillType {
-  children: any;
+  children: string;
   icon?: string;
   type: "disable" | "fill" | "normal";
   border?: boolean;
   className?: string;
-  onClick?: () => void;
 }
 
-function Fill({ children, icon, type, border, className, onClick }: FillType) {
+function Fill({ children, icon, type, border, className }: FillType) {
   return (
     <div
       className={clsx(style.waper, className, {
@@ -21,7 +20,6 @@ function Fill({ children, icon, type, border, className, onClick }: FillType) {
         [style.disable]: type === "disable",
         [style.border]: border,
       })}
-      onClick={onClick}
     >
       <span className={style.lable}>{children}</span>
       {icon && <img src={icon} alt="" className={style.icon} />}

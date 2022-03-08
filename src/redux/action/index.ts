@@ -1,27 +1,22 @@
 import { ActionType } from "../contants";
 
 interface PayloadType {
-  key: string;
-  data: any;
+    key: string;
+    data: any;
 }
 
-interface Request {
-  type: ActionType.API_REQUEST;
+interface Request{
+    type: ActionType.API_REQUEST
 }
-interface Success {
-  type: ActionType.API_SUCCESS;
-  payload: PayloadType;
+interface Success{
+    type: ActionType.API_SUCCESS
+    payload: PayloadType
 }
-interface Error {
-  type: ActionType.API_ERROR;
-  payload: string;
-}
-
-interface HomeChange {
-  type: ActionType.HOME_CHANGE;
-  payload: string;
+interface Error{
+    type: ActionType.API_ERROR
+    payload: string
 }
 
-type Action = Request | Success | Error | HomeChange;
+type Action = Request | Success | Error
 
-export default Action;
+export default Action
